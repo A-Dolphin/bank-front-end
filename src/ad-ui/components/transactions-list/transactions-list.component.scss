@@ -1,0 +1,81 @@
+.transaction-item-container{
+  padding: 5px 10px 0 15px;
+  overflow-y: hidden;
+  overflow-y: auto;
+}
+
+.transaction-item{
+  height: 80px;
+  margin: 0px 10px 30px 0;
+  display: flex;
+  border-left: 6px solid;
+  padding-left: 10px;
+  
+}
+
+.transactions-header-container {
+    border-radius: 10px 10px 0px 0px;
+    width:100%;
+    background-color: #00a1e0;
+    
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    flex: none;
+    display:flex
+  }
+
+.icon {
+    width: 5%;
+}
+
+.transactions-header-text{
+  font-family: 'Calibri';
+  color:#ffffff;
+}  
+
+
+.filter_container{
+    border: 1px solid rgba(139, 139, 139, 0.5);
+    margin: 25px 10px 25px 10px;
+}
+
+
+//Transaction item styling
+
+.date{
+  width: 10%;
+  font-size: 14px;
+  font-family: 'Calibri';
+  padding-top: 32px;
+}  
+
+
+.credit-transaction{
+  color:green;
+  padding-top: 30px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: right;
+  font-family: 'Calibri';
+}
+
+.debit-transaction{
+  color: #dc3645;
+  padding-top: 30px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: right;
+  font-family: 'Calibri';
+}
+.merchant-name{
+  font-size: 18px;
+  font-family: 'Calibri';
+  display: flex;
+  padding-top: 19px;
+  width:300px;
+}
+.transaction-type{
+  font-size: 14px;
+  font-family: 'Calibri';
+  color: gray;
+}
+

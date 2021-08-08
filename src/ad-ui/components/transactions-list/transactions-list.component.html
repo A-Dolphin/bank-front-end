@@ -1,0 +1,25 @@
+
+    <div class="transactions-header-container">
+        <fa-icon class="icon" [icon]="faListUl"></fa-icon>
+        <h2 class="transactions-header-text">Transactions List</h2>
+    </div>
+
+    <app-filter class="filter_container"></app-filter>
+
+
+<div class="transaction-item-container">
+    <app-transaction-item [style.border-color]="transactionItem?.categoryCode" class="transaction-item" *ngFor="let transactionItem of transactions$ | async" [transactionItem]="transactionItem">
+        <span class="date" data-test-hook='transactionDate'>{{transactionItem?.dates?.valueDate | date:'MMM d'}}</span>
+        
+        <span class="merchant-name" data-test-hook='transactionMerchantName'>{{transactionItem?.merchant?.name}}</span>
+        <span class="transaction-type" data-test-hook='transactionType'>{{transactionItem?.transaction?.type}}</span>
+
+        <span data-test-hook='transactionAmount' [ngClass]="transactionItem?.transaction?.creditDebitIndicator === 'CRDT'?'credit-transaction':'debit-transaction'">{{transactionItem?.transaction?.amountCurrency?.currencyCode}} <span *ngIf="transactionItem?.transaction?.creditDebitIndicator === 'CRDT'" >+ </span><span *ngIf="transactionItem?.transaction?.creditDebitIndicator === 'DBIT'" >- </span>{{transactionItem?.transaction?.amountCurrency?.amount}}</span>
+        
+    </app-transaction-item> 
+</div>
+
+
+
+
+

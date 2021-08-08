@@ -1,0 +1,20 @@
+
+<div mat-dialog-content>
+
+<div class="modal-header">
+<h1><b>Review</b> Transfer</h1>
+</div>
+<div class="modal-content">
+    <p><i>Are you ready to send out this transfer?</i></p>
+    <strong>It will be sent to account:</strong>
+    <p>{{data.toAccount}}</p>
+    <strong>With the amount of:</strong>
+    <p>&#8364; {{data.amount}}</p>
+</div>
+
+  <div class="modal-footer">
+    <button class="modal-transfer-button"  (click)="updateTransactions()" [mat-dialog-close]="true">Send Transfer</button>
+    <button class="modal-cancel-button" [mat-dialog-close]="true">Cancel</button>
+  </div> 
+
+</div> 

@@ -1,0 +1,41 @@
+::ng-deep .custom-modal-container {
+    mat-dialog-container {
+      width:50%;
+      border-radius: 4px;
+      position: relative;
+      z-index: 2;
+      position: {
+        top: '0px',
+      }
+    }
+  }
+
+.modal-header{
+    font-size: 22;
+    border-bottom: 1px solid rgba(139, 139, 139, 0.5);
+    font-family: Calibri;
+}
+.modal-content {
+    font-family: Calibri;
+}
+
+.modal-footer{
+    border-top: 1px solid rgba(139, 139, 139, 0.5);
+}
+
+.modal-cancel-button {
+    float: right;
+    padding: 6px;
+    border-radius: 6px;
+    border-color: black;
+    background-color: #ffffff;
+}
+
+.modal-transfer-button{
+    float: right;
+    padding: 6px;
+    background-color: #EC6F31;
+    color: #ffffff;
+    border-radius: 6px;
+}
+

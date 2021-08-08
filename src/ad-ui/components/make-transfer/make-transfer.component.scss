@@ -1,0 +1,87 @@
+
+
+.transfer-content {
+    padding: 5px 0 20px 20px;
+}
+
+.form-label{
+    font-size: 18px;
+    font-family: 'Calibri';
+    margin: 22px 0 10px 0;
+}
+
+.form-control {
+    width: 94%;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 6px 0 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    border: 1px solid rgba(139, 139, 139, 0.5);
+}
+
+.form-control-account {
+    width: 94%;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 6px 0 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    border: 1px solid rgba(139, 139, 139, 0.5);
+    color: black
+}
+
+.form-control::placeholder {
+    font-style: italic;
+}
+
+::placeholder:focus {
+    opacity: 0
+}
+
+// input.ng-invalid.ng-touched:not(:focus) {
+//     border: 1px solid #dc3645;
+//   }
+
+input.ng-invalid.ng-dirty,
+input.ng-invalid.ng-touched {
+    border: 1px solid #dc3645;
+  }
+
+
+.form-group{
+    margin: 20px 0 0 0;
+}
+
+.error-text {
+    color:#dc3645;
+    font-family: 'Calibri';
+}
+
+.transfer-header-container {
+    border-radius: 10px 10px 0px 0px;
+    width:100%;
+    background-color: #00a1e0;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    display:flex
+  }
+
+  .transfer-header-text{
+    font-family: 'Calibri';
+    color:#ffffff;
+  }
+
+  .icon {
+      width: 10%;
+  }
+
+.transfer-submit-button {
+    margin: 0 auto;
+  }
+
+.btn btn-primary js-trigger-form {
+    margin: 0 auto;
+}
+

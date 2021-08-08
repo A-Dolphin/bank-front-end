@@ -1,0 +1,26 @@
+
+    <div class="transfer-header-container">
+        <fa-icon class="icon" [icon]="faWallet"></fa-icon>
+        <h2 class="transfer-header-text">Make Transfer</h2>
+
+    </div>
+    
+    <div class="transfer-content">
+        <form [formGroup] ="transferForm">
+            <div class="form-group">
+                <label class="form-label">From Account</label>
+                <input formControlName="fromAccount" type="text" class="form-control-account" [attr.disabled]="true" [placeholder]="placeholder$ | async" >
+            </div>
+            <div class="form-group">
+                <label class="form-label">To Account</label>
+                <input formControlName="toAccount" type="text" class="form-control" [placeholder]="'type an account name'">
+                <small class="error-text" *ngIf="f.toAccount.invalid && f.toAccount.touched">This field is required</small>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Amount</label>
+                <input formControlName="amount" type="number" class="form-control" [placeholder]="'specify the amount'">                
+                <small class="error-text" *ngIf="f.amount.invalid && f.amount.touched">This field is required</small>
+            </div> 
+        </form>
+    </div>
+    <app-submit-button class="transfer-submit-button" (submitForm)="openModal()" [disabled]="transferForm.invalid"></app-submit-button>
